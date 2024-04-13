@@ -28,7 +28,7 @@ namespace NyamNyam_SochnevApp.MyPages
             }
             player1 = App.algebra.Apelsin;
             RenatSochnevBraslet.ItemsSource = player1;
-            RenatSochnevBraslet.ItemsSource = flower;
+            SochnevBook.ItemsSource = flower;
             SochnevRenatNameOfDish.Text = $"Рицепт и продукты длля блюда, у которого id = \"{App.algebra.Id}\"";
             RenatNameCategory.Text = $"Э то блюдо  из категории{App.algebra.Category.Name}";
             SochnevRenatCookTime.Text = $"Время готовки посичтали и получилось {App.algebra.CookingStage.Sum(x => x.TimeInMinutes)} min.";

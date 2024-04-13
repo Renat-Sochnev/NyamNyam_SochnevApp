@@ -86,14 +86,14 @@ namespace NyamNyam_SochnevApp.MyPages
             int globus = obed.Count;
             if (globus > 0)
             {
-                MessageBox.Show($"This ingredient cannot be removed because it is used in recipes." +
-                    $" Number of dishes in which the ingredient is used: {globus} \n {SochnevRenat}");
+                MessageBox.Show($" Нельзя удалить потому што используется в рецептах" +
+                    $" Кол--во блюд, где используется этот ингердеинет: {globus} \n {SochnevRenat}");
             }
             else
             {
                 App.fish.Ingredient.Remove(BatonBulochka);
                 DriveCar();
-                MessageBox.Show($"Ingredient \"{BatonBulochka.Name}\" removed.");
+                MessageBox.Show($"Был удален ингердент \"{BatonBulochka.Name}\"");
             }
         }
     }
