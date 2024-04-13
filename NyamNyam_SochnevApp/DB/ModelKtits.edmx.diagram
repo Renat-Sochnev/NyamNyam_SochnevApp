@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="04560c0a77ab4ff5b88905f896dfab34" Name="Diagram1">
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.Category" Width="1.5" PointX="0.75" PointY="2.875" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.Client" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.CookingStage" Width="1.5" PointX="5.25" PointY="5.75" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.Dish" Width="1.5" PointX="3" PointY="2.125" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.Ingredient" Width="1.5" PointX="5.25" PointY="10.625" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.IngredientOfStage" Width="1.5" PointX="7.5" PointY="5.875" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.Order" Width="1.5" PointX="3" PointY="7.5" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.OrderedDish" Width="1.5" PointX="5.25" PointY="2.5" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NyamNyam_Database_RenatModel2.Unit" Width="1.5" PointX="3" PointY="11" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_Dish_Category" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_Order_Client" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_CookingStage_Dish1" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_IngredientOfStage_CookingStage1" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_OrderedDish_Dish" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_Ingredient_Unit" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_IngredientOfStage_Ingredient" />
+        <AssociationConnector Association="NyamNyam_Database_RenatModel2.FK_OrderedDish_Order" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

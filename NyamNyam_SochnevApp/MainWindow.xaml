@@ -1,0 +1,54 @@
+﻿<Window x:Class="NyamNyam_SochnevApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NyamNyam_SochnevApp"
+        mc:Ignorable="d"
+        Title="Калькулятор"
+        MinHeight="740" MinWidth="1366"
+        WindowState="Maximized"
+        BorderThickness="1" FontSize="28">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Border BorderThickness="0,0,10,0" BorderBrush="Violet">
+        </Border>
+
+        <Frame Name="ventilatorFrame"
+               Grid.Column="1"
+               Grid.ColumnSpan="10"
+               NavigationUIVisibility="Hidden"/>
+
+        <StackPanel Margin="30">
+
+            <TextBlock>
+                <Hyperlink Name="RenatLink1"
+                           Click="RenatLink1_Click">
+                    <TextBlock Text="1 ссылка"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Margin="0 15">
+                <Hyperlink Name="RenatLink2"
+                           Click="RenatLink2_Click">
+                    <TextBlock Text="2 сылка"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock>
+                <Hyperlink Name="RenatLink3"
+                           Click="RenatLink3_Click">
+                    <TextBlock Text="3 кнопка"/>
+                </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
